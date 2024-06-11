@@ -1,0 +1,66 @@
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  height: 95%;
+  background-color: white;
+  box-shadow: 10px 10px 5px rgb(0, 0, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .summary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 2px solid rgba(0, 0, 0, 0.2);
+  width: 100%;
+  color: black;
+  padding-left: 20px;
+}
+.container .summary .details h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.container .summary .details h3 span {
+  margin-left: 10px;
+  font-weight: bold;
+}
+.container .summary .winner h3 {
+  line-height: 60px;
+  font-size: 25px;
+  font-weight: 300;
+}
+.container .summary .winner h3 span {
+  color: darkgreen;
+  font-weight: bolder;
+}
+.container .summary .draw h3 {
+  line-height: 60px;
+  font-size: 25px;
+  font-weight: 300;
+  color: red;
+}
+.container .playzone {
+  margin-top: 20px;
+  display: grid;
+  color: black;
+  grid-template-columns: auto auto auto;
+  width: 60%;
+  height: 60%;
+}
+.container .playzone .block {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+.container .playzone .block svg {
+  height: 40px;
+  width: 40px;
+}
